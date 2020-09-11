@@ -11,13 +11,13 @@ public class createpage extends HttpServlet {
 	public void doPost(HttpServletRequest req,HttpServletResponse res)
     throws ServletException, IOException{
 	try{
-		
+		 
 		res.setContentType("text/html");
 		PrintWriter out=res.getWriter();
 		try
 		{
 			Class.forName("org.postgresql.Driver");
-			String jdbcUrl="jdbc:postgresql://3.133.157.176:5432/postgres";
+			String jdbcUrl="jdbc:postgresql://104.199.125.242:5432/postgres";
 			String username="postgres";
 			String password="password";
 		

@@ -16,8 +16,8 @@ public class ftat {
 	public HtmlUnitDriver driver;
 	//public WebDriver driver;
 	public WebDriverWait wait;
-	public String URL = "http://40.88.14.229:8080/QAWebapp/";
-	public String URL1 = "http://40.88.14.229:8080/QAWebapp/avncreatepage.jsp";
+	public String URL = "http://13.82.213.187:8080/QAWebapp/";
+	public String URL1 = "http://13.82.213.187:8080/QAWebapp/avncreatepage.jsp";
 	//public String URL = "http://localhost:8080/AVNCommunication-1.0/avnlogin.jsp";
 	//public String URL1 = "http://localhost:8080/AVNCommunication-1.0/avncreatepage.jsp";
 	 

@@ -1,0 +1,18 @@
+---
+- name: installing tomcat
+  hosts: webservers
+  gather_facts: false
+  tasks:
+          - name: downloding tomcat
+            get_url:
+                    url: "https://mirror.jframeworks.com/apache/tomcat/tomcat-8/v8.5.63/bin/apache-tomcat-8.5.63.tar.gz"
+                    dest: /usr/local
+          - name: extracting tomcat 
+            unarchive:
+                    src: "/usr/local/apache-tomcat-8.5.63.tar.gz"
+                    dest: /usr/local
+                    remote_src: yes
+          - name: renaming tomcat home
+            command: mv /usr/local/apache-tomcat-8.5.63 /usr/local/tomcat
+          - name: Starting tomcat
+            shell: nohup /usr/local/tomcat/bin/startup.sh &
